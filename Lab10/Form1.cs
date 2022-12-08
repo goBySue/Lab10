@@ -22,8 +22,30 @@ namespace Lab10
         private void btnCreate_Click(object sender, EventArgs e)
         {
 
+            txtBxName.Enabled = false;
+            txtBxAcctNum.Enabled = false;
+            txtBxOriDeposit.Enabled = false;
+
+            lblDeposit.Visible = true;
+            lblWithdraw.Visible = true;
+            txtBxAddDep.Visible = true;
+            txtBxWithdraw.Visible = true;
+            btnUpdate.Visible = true;
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            lblDeposit.Visible = false;
+            lblWithdraw.Visible = false;
+            txtBxAddDep.Visible = false;
+            txtBxWithdraw.Visible = false;
+
+            lblNewBal.Visible = true;
+            txtBxNewBal.Visible = true;
+
             int acctNum;
-            double origDeposit;
+            double origDeposit, amount;
             string[] name = new string[2];
 
             while (double.TryParse(txtBxOriDeposit.Text, out origDeposit) == false)
@@ -49,63 +71,37 @@ namespace Lab10
 
             else
             {
-                //if (deposit > 0)
-                //{
-                //double newFunds =0;
-                 Customer cust = new Customer(name[0], name[1], acctNum, origDeposit);
-                //txtBxAddDep.Text = cust.Deposit().ToString("c");
-                //txtBxWithdraw.Text = cust.Withdraw().ToString("c");
+            
+                Customer cust = new Customer(name[0], name[1], acctNum, origDeposit);
 
-                    // code write to the text file
-                    try
-                    {
-                        StreamWriter fil = new StreamWriter("BankingInfo.txt", true);
-                        fil.WriteLine(cust);
-                        MessageBox.Show("Writing to the file is done");
-                        fil.Close();
-                    }
-                    catch (IOException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                try
+                {
+                    StreamWriter fil = new StreamWriter("BankingInfo.txt", true);
+                    fil.WriteLine(cust);
+                    MessageBox.Show("New account balance has been successfully upated");
+                    fil.Close();
+                }
+                catch (IOException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
-                    txtBxName.Enabled= false;
-                    txtBxAcctNum.Enabled= false;
-                    txtBxOriDeposit.Enabled= false;
 
-                    lblDeposit.Visible= true;
-                    lblWithdraw.Visible= true;
-                    txtBxAddDep.Visible= true;
-                    txtBxWithdraw.Visible= true;
-                    btnUpdate.Visible = true;
+                if (double.TryParse(txtBxAddDep.Text, out amount) == true)
+                {
+                    txtBxNewBal.Text = cust.Deposit(amount).ToString("c");
+                }
 
+                else if (double.TryParse(txtBxWithdraw.Text, out amount) == true)
+                {
+                    txtBxNewBal.Text = cust.Withdraw(amount).ToString("c");
                 }
 
             }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            lblDeposit.Visible = false;
-            lblWithdraw.Visible = false;
-            txtBxAddDep.Visible = false;
-            txtBxWithdraw.Visible = false;
-
-            lblNewBal.Visible = true;
-            txtBxNewBal.Visible = true;
-
-            int acctNum = 0;
-            double amount = 0, origDeposit = 0; ;
-            string[] name = new string[2];
-            Customer cust = new Customer(name[0], name[1], acctNum, origDeposit);
-
-            if (txtBxAddDep.TextLength > 0)
-                txtBxNewBal.Text = cust.Deposit(amount).ToString();
-
-            else
-                txtBxNewBal.Text = cust.Withdraw(amount).ToString("c");
-            
         }
-    }
 
     }
+}
+
+ 
 

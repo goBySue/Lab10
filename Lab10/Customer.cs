@@ -12,8 +12,8 @@ namespace Lab10
         private string lName;
         private int acctNum;
         private double acctBal;
-        //private double newFunds;
- 
+        private double newBal;
+  
 
         // Default constructor
         public Customer()
@@ -29,15 +29,6 @@ namespace Lab10
             acctBal = bal;
          
         }
-
-        //public Customer(string first, string last, int num, double bal, double funds)
-        //{
-        //    fName = first;
-        //    lName = last;
-        //    acctNum = num;
-        //    acctBal = bal;
-        //    newFunds = funds;
-        //}
 
         public string FName
         {
@@ -62,31 +53,32 @@ namespace Lab10
             set { acctBal = value; }
         }
 
-        //public double NewFunds
-        //{
-        //    get { return newFunds; }
-        //    set { newFunds = value; }
-        //}
-
+        public double NewBal
+        {
+            get { return newBal; }
+            set { newBal = value; }
+        }
         public double Deposit(double amount)
         {
+            double newBal=0;
             if (amount > 0)
-                acctBal +=amount;
+                newBal= acctBal += amount;
 
-            return acctBal;
+            return newBal;
         }
 
         public double Withdraw(double amount)
         {
+            double newBal = 0;
             if (amount > 0)
-                acctBal -= amount;
+                newBal = acctBal -= amount;
 
-            return acctBal;
+            return newBal;
         }
 
         public override string ToString()
         {
-            return fName + " " + lName + " " + "Updated Account Balance: " + acctBal.ToString("c");
+            return fName + " " + lName + " " + "Updated Account Balance: " + newBal.ToString("c");
          
         }
 

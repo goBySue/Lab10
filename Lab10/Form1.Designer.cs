@@ -48,12 +48,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(224, 42);
+            this.label1.Location = new System.Drawing.Point(131, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(436, 59);
+            this.label1.Size = new System.Drawing.Size(370, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "Banking Register";
             // 
@@ -62,7 +62,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(155, 164);
+            this.lblName.Location = new System.Drawing.Point(108, 120);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(81, 25);
@@ -74,7 +74,7 @@
             this.lblAcctNum.AutoSize = true;
             this.lblAcctNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAcctNum.ForeColor = System.Drawing.Color.White;
-            this.lblAcctNum.Location = new System.Drawing.Point(155, 276);
+            this.lblAcctNum.Location = new System.Drawing.Point(108, 206);
             this.lblAcctNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAcctNum.Name = "lblAcctNum";
             this.lblAcctNum.Size = new System.Drawing.Size(137, 25);
@@ -86,7 +86,7 @@
             this.lblOriginDeposit.AutoSize = true;
             this.lblOriginDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOriginDeposit.ForeColor = System.Drawing.Color.White;
-            this.lblOriginDeposit.Location = new System.Drawing.Point(155, 396);
+            this.lblOriginDeposit.Location = new System.Drawing.Point(108, 287);
             this.lblOriginDeposit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOriginDeposit.Name = "lblOriginDeposit";
             this.lblOriginDeposit.Size = new System.Drawing.Size(166, 25);
@@ -98,7 +98,7 @@
             this.lblDeposit.AutoSize = true;
             this.lblDeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeposit.ForeColor = System.Drawing.Color.White;
-            this.lblDeposit.Location = new System.Drawing.Point(213, 507);
+            this.lblDeposit.Location = new System.Drawing.Point(160, 401);
             this.lblDeposit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeposit.Name = "lblDeposit";
             this.lblDeposit.Size = new System.Drawing.Size(85, 25);
@@ -111,7 +111,7 @@
             this.lblWithdraw.AutoSize = true;
             this.lblWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWithdraw.ForeColor = System.Drawing.Color.White;
-            this.lblWithdraw.Location = new System.Drawing.Point(532, 507);
+            this.lblWithdraw.Location = new System.Drawing.Point(384, 401);
             this.lblWithdraw.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWithdraw.Name = "lblWithdraw";
             this.lblWithdraw.Size = new System.Drawing.Size(102, 25);
@@ -121,28 +121,29 @@
             // 
             // txtBxName
             // 
-            this.txtBxName.Location = new System.Drawing.Point(327, 164);
+            this.txtBxName.Location = new System.Drawing.Point(270, 117);
             this.txtBxName.Name = "txtBxName";
-            this.txtBxName.Size = new System.Drawing.Size(364, 30);
+            this.txtBxName.Size = new System.Drawing.Size(250, 30);
             this.txtBxName.TabIndex = 6;
             // 
             // txtBxAcctNum
             // 
-            this.txtBxAcctNum.Location = new System.Drawing.Point(404, 276);
+            this.txtBxAcctNum.Location = new System.Drawing.Point(329, 201);
             this.txtBxAcctNum.Name = "txtBxAcctNum";
-            this.txtBxAcctNum.Size = new System.Drawing.Size(287, 30);
+            this.txtBxAcctNum.Size = new System.Drawing.Size(191, 30);
             this.txtBxAcctNum.TabIndex = 7;
             // 
             // txtBxOriDeposit
             // 
-            this.txtBxOriDeposit.Location = new System.Drawing.Point(445, 396);
+            this.txtBxOriDeposit.Location = new System.Drawing.Point(389, 282);
             this.txtBxOriDeposit.Name = "txtBxOriDeposit";
-            this.txtBxOriDeposit.Size = new System.Drawing.Size(247, 30);
+            this.txtBxOriDeposit.Size = new System.Drawing.Size(135, 30);
             this.txtBxOriDeposit.TabIndex = 8;
+            this.txtBxOriDeposit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtBxAddDep
             // 
-            this.txtBxAddDep.Location = new System.Drawing.Point(162, 554);
+            this.txtBxAddDep.Location = new System.Drawing.Point(113, 429);
             this.txtBxAddDep.Name = "txtBxAddDep";
             this.txtBxAddDep.Size = new System.Drawing.Size(195, 30);
             this.txtBxAddDep.TabIndex = 9;
@@ -150,7 +151,7 @@
             // 
             // txtBxWithdraw
             // 
-            this.txtBxWithdraw.Location = new System.Drawing.Point(486, 554);
+            this.txtBxWithdraw.Location = new System.Drawing.Point(329, 429);
             this.txtBxWithdraw.Name = "txtBxWithdraw";
             this.txtBxWithdraw.Size = new System.Drawing.Size(195, 30);
             this.txtBxWithdraw.TabIndex = 10;
@@ -158,7 +159,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(40, 722);
+            this.btnCreate.Location = new System.Drawing.Point(12, 531);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(151, 88);
             this.btnCreate.TabIndex = 11;
@@ -168,7 +169,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(664, 722);
+            this.btnUpdate.Location = new System.Drawing.Point(411, 531);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(151, 88);
             this.btnUpdate.TabIndex = 12;
@@ -179,10 +180,11 @@
             // 
             // txtBxNewBal
             // 
-            this.txtBxNewBal.Location = new System.Drawing.Point(426, 482);
+            this.txtBxNewBal.Location = new System.Drawing.Point(364, 356);
             this.txtBxNewBal.Name = "txtBxNewBal";
-            this.txtBxNewBal.Size = new System.Drawing.Size(266, 30);
+            this.txtBxNewBal.Size = new System.Drawing.Size(156, 30);
             this.txtBxNewBal.TabIndex = 14;
+            this.txtBxNewBal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtBxNewBal.Visible = false;
             // 
             // lblNewBal
@@ -190,7 +192,7 @@
             this.lblNewBal.AutoSize = true;
             this.lblNewBal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewBal.ForeColor = System.Drawing.Color.White;
-            this.lblNewBal.Location = new System.Drawing.Point(155, 482);
+            this.lblNewBal.Location = new System.Drawing.Point(106, 361);
             this.lblNewBal.Name = "lblNewBal";
             this.lblNewBal.Size = new System.Drawing.Size(202, 25);
             this.lblNewBal.TabIndex = 15;
@@ -201,8 +203,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(855, 835);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(590, 688);
             this.Controls.Add(this.lblNewBal);
             this.Controls.Add(this.txtBxNewBal);
             this.Controls.Add(this.btnUpdate);
